@@ -75,7 +75,7 @@ social:
     color: '#FF0000'
 
 links:
-  fixed-button-width: false # Set to true/false
+  fixed-button-width: true # Set to true/false
   icon-position: left # Set to left/right
   buttons:
     - category: Blogs
