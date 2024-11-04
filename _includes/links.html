@@ -1,22 +1,28 @@
 <main>
     {% for button in site.links.buttons %}
-    <h2 class="text-center">{{ button.category }}</h2>
+    <div style="width:50%; margin: 0 auto; padding-top: 10px; ">
     {% for item in button.items %}
     <div class="row">
         {% if item.tag %}
         <div class="col link is-center">
             {% else %}
-            <div class="col is-center">
+            <div class="col is-vertical-align" style="border-bottom: 1px solid lightgray !important;">
                 {% endif %}
+                {{ button.category }}:&nbsp;
                 {% if site.links.fixed-button-width == true %}
-                <a class="button outline secondary" style="width:50%" href="{{ item.url }}" target="_blank">{% else %}<a class="button outline secondary" href="{{ item.url }}" target="_blank">{% endif %}{% if site.links.icon-position == "right" %}{% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-right:.5em">{{ item.tag}}</span>{% endif %}{{ item.title }}{% if item.icon %}<span class="iconify-inline" data-icon="{{ item.icon }}" style="margin-left:.5em;margin-right:0"></span>{% endif %}{% if item.custom-icon %}<span class="custom-icon" style="margin-left:.5em">{{ item.custom-icon }}</span>{% endif %}</a>{% else %}{% if item.icon %}<span class="iconify-inline" data-icon="{{ item.icon }}"></span>{% endif %}{% if item.custom-icon %}<span class="custom-icon" style="margin-right:.5em">{{ item.custom-icon}}</span>{% endif %}{{ item.title }}{% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-left:.5em">{{ item.tag }}</span>{% endif %}</a>{% endif %}
+                <a style="width:50%"  href="{{ item.url }}" target="_blank">{% else %}<a  href="{{ item.url }}" target="_blank">{% endif %}{% if site.links.icon-position == "right" %}{% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-right:.5em">{{ item.tag}}</span>{% endif %}{{ item.title }}{% if item.icon %}<span class="iconify-inline" data-icon="{{ item.icon }}" style="margin-left:.5em;margin-right:0"></span>{% endif %}{% if item.custom-icon %}<span class="custom-icon" style="margin-left:.5em">{{ item.custom-icon }}</span>{% endif %}</a>{% else %}{% if item.icon %}<span class="iconify-inline" data-icon="{{ item.icon }}"></span>{% endif %}{% if item.custom-icon %}<span class="custom-icon" style="margin-right:.5em">{{ item.custom-icon}}</span>{% endif %}{{ item.title }}{% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-left:.5em">{{ item.tag }}</span>{% endif %}</a>{% endif %}
             </div>
         </div>
         {% endfor %}
+    </div>
         {% endfor %}
     {% if site.address %}
         <div class="col is-center">
-            <p>{{ site.address }}</p>
+            <p>
+                <br/>
+                <br/>
+                {{ site.address }}
+            </p>
         </div>
     {% endif %}
 </main>

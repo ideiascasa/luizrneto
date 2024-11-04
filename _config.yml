@@ -67,10 +67,17 @@ social:
 #    icon: ri:mastodon-fill
 #    color: '#6364FF'
 
-  - name: whatsapp
-    url: https://wa.me/5511982543222
-    icon: ri:whatsapp-fill
-    color: '#25D366'
+  - name: (11) 3079-5111
+    url: tel:+551130795111
+    icon: line-md:phone-filled
+
+  - name: lr@nradv.com.br
+    url: mailto:lr@nradv.com.br
+    icon: line-md:email-filled
+
+  - name: maps
+    url: https://maps.app.goo.gl/UgM1WJ3nCiRnTUfs9
+    icon: mdi:location
 
 #  - name: youtube
 #    url: https://www.youtube.com/@example
@@ -81,20 +88,16 @@ links:
   fixed-button-width: false # Set to true/false
   icon-position: left # Set to left/right
   buttons:
-    - category: Telefones
+    - category: Telefone
       items:
         - title: (11) 3079-5111
           url: tel:+551130795111
-          icon: line-md:phone-filled
 
         - title: (11) 3079-5112
           url: tel:+551130795112
-          icon: line-md:phone-filled
 
         - title: (11) 98254-3222
           url: tel:+5511982543222
-          icon: line-md:cellphone
-          tag: W
 
     - category: E-mail
       items:
@@ -105,8 +108,6 @@ links:
       items:
         - title: nradv.com.br
           url: https://nradv.com.br/
-          icon: mdi:web
-          tag: Novo
 
 #bio:
 #  - name: YouTube Shorts
