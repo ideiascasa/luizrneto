@@ -14,4 +14,9 @@
         </div>
         {% endfor %}
         {% endfor %}
+    {% if site.address %}
+        <div class="col is-center">
+            <p>{{ site.address }}</p>
+        </div>
+    {% endif %}
 </main>
