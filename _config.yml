@@ -2,9 +2,9 @@
 name: Luiz Roselli Neto
 tagline: Luiz Roselli Neto
 description: Societário Novaes & Roselli Advogados
-#favicon:
-#  path: https://picsum.photos/64.webp
-#  type: webp # File format of image. Change according to your image. Supported types: https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+favicon:
+  path: https://nradv.com.br/wp-content/uploads/2023/08/cropped-favicon-novaes-roselli-advogados-32x32.png
+  type: png # File format of image. Change according to your image. Supported types: https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
 logo: https://nradv.com.br/wp-content/uploads/2023/08/cropped-cropped-cropped-nradv-2x.png
 url: ideiascasa.github.io/luizrneto/
 locale: pt_BR
@@ -78,7 +78,7 @@ social:
 #    color: '#FF0000'
 
 links:
-  fixed-button-width: true # Set to true/false
+  fixed-button-width: false # Set to true/false
   icon-position: left # Set to left/right
   buttons:
     - category: Telefones
