@@ -41,7 +41,7 @@ plugins:
 exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, CHANGELOG.md, Gemfile, LICENSE, vendor/, funding.yml, linkhub-jekyll-theme.gemspec]
 
 address: |
-  2564 - 6º and Av. Brigadeiro Faria Lima
+  Av. Brigadeiro Faria Lima, 2564 - 6º andar
   São Paulo SP
   01451-000
   Brasil
